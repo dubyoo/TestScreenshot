@@ -18,9 +18,7 @@ class MyThread(threading.Thread):
         img_file = './img/OVERFLOW.bmp'
         index = 0
         while True:
-            # maxVal, maxLoc = find_image(self._hwnd, img_file)
-            # print(maxVal, maxLoc)
             index += 1
-            # print("线程%s第%d次截图" % (self.getName(), index))
+            print("线程%s第%d次截图" % (self.getName(), index))
             with self._lock:
                 img_src = screen_shot(self._hwnd)

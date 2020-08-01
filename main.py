@@ -17,5 +17,3 @@ if __name__ == '__main__':
         # pass
         thread = my_thread.MyThread(hwnd, lock)
         thread.start()
-    # while True:
-    #     pass
